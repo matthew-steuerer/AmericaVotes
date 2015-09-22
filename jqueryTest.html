@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery Stuff</title>
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function()
+			{
+				//show text
+				$('#mylink1').click(function(e)
+				{
+					$('#mytext').animate({marginLeft:'400px', fontsize: '200px'});
+				});
+
+				//hide text
+				$('#mylink2').click(function(e)
+				{
+					$('#mytext').animate({marginLeft:'0px', fontsize: '60px'});
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<!-- TEXT OVER HERE -->
+		<h1 id="mytext">This is my text</h1>
+
+		<!-- LINKS OVER HERE -->
+		<a id="mylink1" href="#">Link 1</a>
+		<a id="mylink2" href="#">Link 2</a>
+	</body>
+</html>
